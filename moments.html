@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>朋友圈</title>
+    <link rel="stylesheet" href="http://coding.imweb.io/demo/reset.css">
+    <!-- 页面样式 -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page-moments">
+        <header class="header">
+            <div class="header-banner"></div>
+            <div class="header-user">
+                <span class="user-name"></span>
+                <a class="user-link" href="#"><img src="./img/avatar1.png" width="70" height="70" alt=""></a>
+            </div>
+        </header>
+        <div class="moments-list">
+            <!-- 消息内容 -->
+        </div>
+        <div class="huifuzujian">                                                <!-- 回复组件结构 -->
+            <input type="text" class="huifukuang" placeholder=" 评论">
+            <button class="fasong">发送</button>
+        </div>                                                                   <!-- 创建预览结构 -->
+        <div class="yulan">
+            <img class="dizhi" src="" alt="">                                    <!-- 地址为空，等待事件触发给定地址 -->
+        </div>
+    </div>
+    <div class="mianban" id="mianban">                                           <!-- 创建两个面板，根据不同情况显示不同面板 -->
+        <span class="dianzan"><img class="dianzan-img" src="./img/like.png" alt="点赞"><span id="dz">点赞</span></span>
+        <span class="huifu"><img  class="huifu-img" src="./img/comment.png" alt="评论"><span>评论</span>
+    </div>
+    <div class="mianban" id="mianban-tow">
+        <span class="quxiao"><img class="quxiao-img" src="./img/like.png" alt="取消"><span class="qx">取消</span></span>
+        <span class="huifu"><img  class="huifu-img" src="./img/comment.png" alt="回复"><span>评论</span></span>
+    </div>
+    
+    
+    <!-- 引入jQuery -->
+    <script src="https://7.url.cn/edu/jslib/jquery/1.9.1/jquery.min.js"></script>
+    <!-- 页面逻辑代码 -->
+    <script src="./app.js"></script>
+</body>
+</html>
